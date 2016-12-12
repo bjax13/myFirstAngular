@@ -1,1 +1,1 @@
-angular.module('myFirstApp',[]);
+angular.module('myApp',[]);

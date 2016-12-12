@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html ng-app="myFirstApp">
+<html ng-app="myApp">
   <head>
     <meta charset="utf-8">
     <title>My First Angular App</title>
   </head>
-  <body ng-controller = "mainController">
-    <h1>Hello Worls!!!!</h1>
-    <h1>{{greeting}}</h1>
+  <body ng-controller = "mainCtrl">
+    <h1>Hello Worlds!!!!</h1>
+    <h1>{{test}}</h1>
 
 
+
+    <p>Guest List</p>
+
+    <ul>
+      <li ng-repeat="guest in guests"> {{guest.name}} </li>
+
+    </ul>
+
+      <input ng-model ="newGuest" />
+      <button ng-click="addGuest()">Add Guest</button>
 
 
 
