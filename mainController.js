@@ -3,13 +3,13 @@ angular.module('myApp',[])
 .controller('mainCtrl', function($scope) {
   $scope.test = 'It\'s party time';
 
-  $scope.addGuest = function () {
+  $scope.addGuest = function (guest , color) {
     // get value from input
     // make new guest opject with random color
     // add that guest to the guests array
     var newGuest = {
-      name: $scope.newGuest,
-      color:$scope.newColor
+      name: guest,
+      color:color
     }
     console.log($scope.newColor);
 
