@@ -11,9 +11,10 @@
 
 
     <p>Guest List</p>
+    <input placeholder="Enter guest info" ng-model = "filterInput" >
 
     <ul>
-      <li ng-repeat="guest in guests"> {{guest.name}} </li>
+      <li ng-repeat="guest in guests | filter: filterInput"> {{guest.name}} </li>
 
     </ul>
 
